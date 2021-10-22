@@ -1,0 +1,46 @@
+//////////////////////// tabs
+.ex-tabs__btn {
+
+  &._active {
+    border-color: red;
+  }
+}
+
+.ex-tabs__content {
+  display: none;
+  opacity: 0;
+
+  &._active {
+    display: block;
+    animation: .4s ease forwards fadeIn;
+  }
+}
+
+
+//////////////////////// accordion
+.ex-accordion {
+
+}
+
+.ex-accordion__item {
+
+}
+
+.ex-accordion__btn {
+  width: 100%;
+  text-align: left;
+
+  &._active {
+    border-color: red;
+  }
+}
+
+.ex-accordion__text {
+  display: none;
+  opacity: 0;
+
+  .ex-accordion__btn._active + & {
+    display: block;
+    animation: .4s ease forwards fadeIn;
+  }
+}

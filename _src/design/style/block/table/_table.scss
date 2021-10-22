@@ -1,0 +1,164 @@
+.table {
+  border-radius: 5px;
+  border: 1px solid #E6E8EB;
+}
+
+.table__row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 30px;
+
+  @media (max-width: $lg) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $md) {
+    padding: 12px 6px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 27px;
+    right: 27px;
+    height: 1px;
+    background-color: #E6E8EB;
+
+    @media (max-width: $lg) {
+      right: 6px;
+      left: 6px;
+    }
+  }
+
+  &--head {
+    background-color: #F7F7F9;
+    margin: -2px -2px 0;
+    border-radius: 5px 5px 0 0;
+
+    @media (max-width: $md) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.table__row:first-child,
+.table__row:last-child {
+  &::after {
+    background-color: transparent;
+  }
+}
+
+.table__cel {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 40px 20px 32px;
+
+  @media (max-width: $lg) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media (max-width: $md) {
+    padding: 7px 10px;
+  }
+
+  &--h {
+    font-size: 20px;
+    padding-top: 21px;
+    padding-bottom: 22px;
+
+      @media (max-width: $md) {
+        width: 100%;
+
+        &:not(:first-child) {
+            display: none;
+        }
+      }
+
+    &.table__cel--quest{
+      span {
+
+        &:first-child {
+          @media (max-width: $md) {
+            display: none;
+          }
+        }
+
+        &:last-child {
+          display: none;
+
+          @media (max-width: $md) {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+
+  &--quest {
+    width: 20%;
+
+    &:not([class*='--h']) {
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+  }
+
+  &--size {
+    width: 20%;
+
+    @media (max-width: $xl) {
+      width: 22%;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+      order: 1;
+    }
+  }
+
+  &--date {
+    width: 20%;
+
+    @media (max-width: $xl) {
+      width: 22%;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+      order: 3
+    }
+  }
+
+  &--format {
+    width: 20%;
+
+    @media (max-width: $xl) {
+      width: 17%;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+      order: 2
+    }
+  }
+
+  &--downl {
+    width: 20%;
+
+    @media (max-width: $xl) {
+      width: 17%;
+    }
+
+    @media (max-width: $md) {
+      width: 50%;
+      order: 4;
+    }
+  }
+}
+
+

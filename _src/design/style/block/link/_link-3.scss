@@ -1,0 +1,11 @@
+.link-3 {
+  color: $c-main;
+  transition: .2s;
+  box-shadow: inset 0px -1px 0px 0px rgba($c-main, .3);
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+    box-shadow: inset 0px -1px 0px 0px rgba($c-accent, 1);
+  }
+}

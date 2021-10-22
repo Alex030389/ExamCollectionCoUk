@@ -1,0 +1,27 @@
+.slider-pagination {
+  //text-align: center;
+  //font-size: 0;
+  margin: 0 auto;
+
+  .swiper-pagination-bullet {
+    margin: 0 5px;
+    background-color: #fff;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $c-accent;
+  }
+
+  &--t2{
+    .swiper-pagination-bullet {
+      background-color: #E5E5E5;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #C8BAF9;
+    }
+  }
+}

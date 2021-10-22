@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0 15px;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  transition: .3s;
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  /////////////////////////////////////////// type
+  &--primary {
+    color: #fff;
+    background-color: $c-accent;
+    border-radius: 5px;
+    font-size: 18px;
+
+    &:hover {
+      color: #fff;
+      background-color: rgba($c-accent, .8);
+    }
+  }
+
+  /////////////////////////////////////////// size
+  //&--lg {
+  //  max-width: 200px;
+  //  height: 40px;
+  //  font-size: 20px;
+  //  line-height: 40px;
+  //}
+  //
+  //&--sm {
+  //  max-width: 100px;
+  //  height: 30px;
+  //  line-height: 30px;
+  //}
+}

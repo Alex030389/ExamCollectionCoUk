@@ -1,0 +1,168 @@
+@@include('block/head.html', {'title': 'home'})
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////-->
+  <section class="s-promo">
+    <div class="container">
+      <h1 class="s-promo__title title">Pass IT Certification Exams</h1>
+      <form class="s-promo__search-form search-form" action="#">
+        <div class="search-form__group">
+          <label class="visually-hidden" for="search">Search</label>
+          <input class="search-form__control" id="search" type="text">
+        </div>
+        <button class="search-form__btn btn btn--primary">Search</button>
+      </form>
+    </div><!--/container-->
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////-->
+  <section class="s-we-offer">
+    <div class="container">
+      <h2 class="title-2 title-2--accent">What we offer?</h2>
+      <div class="s-we-offer__txt">
+        <p>Instant downloads allowing you to study as soon as you complete your purchase. High success rate supported by our 99.3% pass rate history and money back guarantee should you fail your exam.</p>
+        <p>Free first on the market updates available within 2 weeks of any change to the actual exam. Instant downloads allowing you to study as soon as you complete your purchase. High success rate supported by our 99.3% pass rate history and money back guarantee should you fail your exam. Free first on the market updates available within 2 weeks of any change to the actual exam.</p>
+        <p>Instant downloads allowing you to study as soon as you complete your purchase. High success rate supported by our 99.3% pass rate history and money back guarantee should you fail your exam.</p>
+        <p>Free first on the market updates available within 2 weeks of any change to the actual exam. Instant downloads allowing you to study as soon as you complete your purchase. High success rate supported by our 99.3% pass rate history and money back guarantee should you fail your exam. Free first on the market updates available within 2 weeks of any change to the actual exam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--/////////////////////////////////////////////////////////-->
+  <section class="s-hot-provider">
+    <div class="container">
+      <h2 class="s-hot-provider__title title-2">Hot Providers</h2>
+      <div class="s-hot-provider__box hot-provider">
+        <div class="hot-provider__wrap-list swiper-container">
+          <div class="hot-provider__list swiper-wrapper">
+            @@for(var i = 0; i < 2; i++) {
+            <div class="hot-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/1.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CompTIA Security+</a>
+              </div><!--/hot-provider__item-->
+            </div>
+            <div class="hot-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/2.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">Microsoft Certified: Azure Administrator
+                  Associate</a>
+              </div><!--/hot-provider__item-->
+            </div>
+            <div class="hot-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/3.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CCNA</a>
+              </div><!--/hot-provider__item-->
+            </div>
+            <div class="hot-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/4.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CompTIA A+</a>
+              </div><!--/hot-provider__item-->
+            </div>
+            <div class="hot-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/5.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">MCSA: Windows Server 2016</a>
+              </div><!--/hot-provider__item-->
+            </div>
+            }
+          </div><!--/hot-provider__list-->
+        <div class="hot-provider__pagination swiper-pagination slider-pagination"></div>
+        </div><!--/hot-provider__container-->
+
+        <button class="hot-provider__btn-prev slider-btn">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#chevron-left"></use>
+          </svg>
+        </button>
+        <button class="hot-provider__btn-next slider-btn">
+          <svg aria-hidden="true">
+            <use xlink:href="./design/images/symbol/sprite.svg#chevron-left"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--/////////////////////////////////////////////////////////////-->
+  <section class="s-cert-provider">
+    <div class="container">
+      <h2 class="s-cert-provider__title title-2">Certification Providers</h2>
+      <div class="s-cert-provider__box cert-provider">
+        <div class="cert-provider__wrap-list swiper-container">
+          <div class="cert-provider__list swiper-wrapper">
+            @@for(var i = 0; i < 3; i++) {
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/1.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CompTIA Security+</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/2.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">Microsoft Certified: Azure Administrator
+                  Associate</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/3.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CCNA</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/4.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">CompTIA A+</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/5.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">MCSA: Windows Server 2016</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            <div class="cert-provider__item swiper-slide">
+              <div class="provider-card">
+                <div class="provider-card__wrap-img">
+                  <img src="./design/images/vendor-logo/5.png" alt="img" loading="lazy">
+                </div>
+                <a class="provider-card__link link-stretched" href="#">MCSA: Windows Server 2016</a>
+              </div>
+            </div><!--/cert-provider__item-->
+            }
+          </div>
+          <div class="cert-provider__pagination slider-pagination slider-pagination--t2 swiper-pagination"></div>
+        </div><!--/cert-provider__container-->
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

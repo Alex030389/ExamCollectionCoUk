@@ -1,0 +1,11 @@
+.link-2 {
+  color: #fff;
+  box-shadow: inset 0px -1px 0px 0px rgba(#fff, .4);
+  transition: .2s;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0px -1px 0px 0px rgba(#fff, 1);
+  }
+}

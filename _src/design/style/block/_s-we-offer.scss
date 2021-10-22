@@ -1,0 +1,21 @@
+.s-we-offer {
+  padding: 120px 0;
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
+}
+
+.s-we-offer__txt {
+  column-count: 2;
+  column-gap: 10%;
+  margin-bottom: -28px;
+
+  p {
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $lg) {
+    column-count: 1;
+  }
+}

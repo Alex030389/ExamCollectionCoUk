@@ -1,0 +1,9 @@
+.txt {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 28px;
+  }
+}

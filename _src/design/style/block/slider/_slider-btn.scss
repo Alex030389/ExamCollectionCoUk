@@ -1,0 +1,22 @@
+.slider-btn {
+  @extend .btn-reset;
+  position: absolute;
+
+  svg {
+    width: 34px;
+    height: 34px;
+    fill: #000;
+  }
+
+  &[class*="__btn-next"] {
+    svg {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &[aria-disabled="true"] {
+    svg {
+      fill: $c-accent;
+    }
+  }
+}

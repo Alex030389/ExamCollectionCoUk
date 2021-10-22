@@ -1,0 +1,15 @@
+.title-2 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 36px;
+
+  @media (max-width: $md) {
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+
+  &--accent {
+    color: $c-accent;
+  }
+}

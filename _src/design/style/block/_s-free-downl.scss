@@ -1,0 +1,38 @@
+.s-free-downl {
+  padding-bottom: 60px;
+
+  @media (max-width: $md) {
+    padding-bottom: 48px;
+  }
+}
+
+.s-free-downl__title {
+  margin-bottom: 14px;
+
+  @media (max-width: $md) {
+    font-size: 30px;
+  }
+}
+
+.s-free-down__subtitle {
+  margin-bottom: 36px;
+  font-weight: 500;
+  font-size: 20px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+
+  .s-free-down__table + & {
+    padding-top: 60px;
+
+    @media (max-width: $md) {
+      padding-top: 30px;
+    }
+  }
+}
+
+.s-free-down__table {
+  max-width: 1313px;
+  width: 100%;
+}

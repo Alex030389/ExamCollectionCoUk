@@ -1,0 +1,12 @@
+.logo {
+
+  img {
+    width: 132px;
+    height: 55px;
+
+    @media (max-width: $md) {
+      width: 93px;
+      height: 39px;
+    }
+  }
+}

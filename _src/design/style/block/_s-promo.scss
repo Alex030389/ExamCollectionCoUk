@@ -1,0 +1,49 @@
+.s-promo {
+  background: url("../images/ui/promo/promo.jpg") center top no-repeat;
+  height: 758px;
+  position: relative;
+  padding-top: 350px;
+
+  @media (max-width: $xl) {
+    height: 600px;
+    padding-top: 300px;
+  }
+
+  @media (max-width: $md) {
+    height: 517px;
+    padding-top: 300px;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 220px;
+    background: url("../images/ui/promo/promo-sm.jpg") left top no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, transparent 60%);
+
+    @media (max-width: $sm) {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, transparent 100%);
+    }
+  }
+}
+
+.s-promo__title {
+  margin-bottom: 26px;
+
+  @media (max-width: $sm) {
+    max-width: 300px;
+  }
+}
+
+.s-promo__search-form {
+}
+
+
+
