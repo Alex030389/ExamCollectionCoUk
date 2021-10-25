@@ -1,0 +1,19 @@
+.s-review {
+  background-color: #F9F9F9;
+  padding: 60px 0;
+
+  @media (max-width: $md) {
+    padding: 35px 0;
+  }
+}
+
+.s-review__list {
+  @extend .list-reset;
+  max-width: 1313px;
+}
+
+.s-review__item {
+  &:not(:last-child) {
+    margin-bottom: 29px;
+  }
+}

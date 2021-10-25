@@ -1,0 +1,36 @@
+.review {
+
+}
+
+.review__rating {
+  display: flex;
+  margin-bottom: 46px;
+
+  @media (max-width: $md) {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  img {
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+  }
+}
+
+.review__text {
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    margin-bottom: 14px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.review__author {
+  font-size: 26px;
+  text-align: right;
+}
