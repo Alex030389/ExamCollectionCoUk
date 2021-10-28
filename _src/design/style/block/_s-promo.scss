@@ -32,6 +32,11 @@
       background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, transparent 100%);
     }
   }
+
+  &--page-404 {
+    height: 850px;
+    background-size: cover;
+  }
 }
 
 .s-promo__title {

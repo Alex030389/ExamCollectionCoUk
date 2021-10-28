@@ -2,16 +2,12 @@
 @import "base/font";
 @import "base/var";
 @import "base/global";
-//@import "base/animation";
 @import "base/util";
 
 // ///////////////////////////////////////// block
 // title
 @import "block/title/title";
 @import "block/title/title-2";
-
-// menu
-//@import "block/menu/menu";
 
 // btn
 @import "block/btn/btn-reset";
@@ -27,12 +23,6 @@
 @import "block/list/list-reset";
 @import "block/list/list";
 
-// form
-//@import "block/form/form";
-//@import "block/form/form-group";
-//@import "block/form/form-label";
-//@import "block/form/form-control";
-
 // table
 @import "block/table/table";
 
@@ -40,13 +30,11 @@
 @import "block/slider/slider-btn";
 @import "block/slider/slider-pagination";
 
-
 // ather
 @import "block/container";
 @import "block/txt";
 @import "block/header";
 @import "block/logo";
-//@import "block/breadcrumbs";
 @import "block/s-promo";
 @import "block/search-form";
 @import "block/s-we-offer";
@@ -61,15 +49,6 @@
 @import "block/s-free-downl";
 @import "block/s-review";
 @import "block/review";
-
+@import "block/banner-404";
 @import "block/footer";
 @import "block/up";
-
-// modal
-//@import "block/modal/modal";
-
-// ///////////////////////////////////////// display
-@import "base/display";
-
-//////////////////////////////////////////// example
-//@import "base/example";

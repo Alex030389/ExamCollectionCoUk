@@ -1,0 +1,55 @@
+.banner-404 {
+  margin: -390px 0 45px;
+  position: relative;
+  z-index: 100;
+
+  @media (max-width: $xl) {
+    margin-top: -230px;
+  }
+
+  @media (max-width: $md) {
+    margin-top: -140px;
+  }
+
+  @media (max-width: $sm) {
+    margin-top: -190px;
+  }
+}
+
+.banner-404__inner {
+  max-width: 1180px;
+  background-color: #C8BAF9;
+  border-radius: 10px;
+  padding: 57px 42px 78px;
+  margin: 0 auto;
+}
+
+.banner-404__title {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.16;
+  margin-bottom: 56px;
+
+  @media (max-width: $md) {
+    font-size: 50px;
+    margin-bottom: 36px;
+  }
+}
+
+.banner-404__txt {
+  color: #0B1129;
+  font-size: 16px;
+  line-height: 1.87;
+
+  a {
+    color: $c-accent;
+    box-shadow: inset 0px -1px 0px 0px rgba($c-accent, .3);
+    transition: .2s;
+
+    &:hover {
+      color: $c-accent;
+      text-decoration: none;
+      box-shadow: inset 0px -1px 0px 0px rgba($c-accent, 1);
+    }
+  }
+}
