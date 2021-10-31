@@ -211,7 +211,7 @@ exports.default = series(
     sprite,
     cssLib,
     css,
-    jsJquery,
+    // jsJquery,
     jsLib,
     js
   ),
@@ -230,7 +230,7 @@ exports.build = series(
     sprite,
     cssLib,
     cssBuild,
-    jsJquery,
+    // jsJquery,
     jsLib,
     jsBuild
   )

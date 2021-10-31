@@ -1,14 +1,21 @@
 /////////////////////////////////////////// scroll to top
-$(window).on('scroll', function () {
-  if ($(this).scrollTop() > 1500) {
-    // $('.up').fadeIn();
-    $('.up').css({"transform": "translateX(0)"});
-  } else {
-    $('.up').css({"transform": "translateX(100px)"});
+(() => {
+  if(document.querySelector('.up')) {
+    const up = document.querySelector('.up');
+
+    window.onscroll = () => {
+      if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        up.classList.add('up--active');
+      } else {
+        up.classList.remove('up--active');
+      }
+    };
+
+    up.addEventListener('click', () => {
+      window.scroll({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
-});
-$('.up').on('click', function () {
-  $('body,html').animate({
-    scrollTop: 0
-  }, 500);
-});
+})();

@@ -1,10 +1,15 @@
 .banner-404 {
-  margin: -390px 0 45px;
-  position: relative;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  // margin: -450px 0 45px;
+  // position: relative;
   z-index: 100;
 
   @media (max-width: $xl) {
-    margin-top: -230px;
+    position: static;
+    margin: -230px 0 45px;
   }
 
   @media (max-width: $md) {
@@ -22,6 +27,10 @@
   border-radius: 10px;
   padding: 57px 42px 78px;
   margin: 0 auto;
+
+  @media (max-width: $md) {
+    padding: 36px 19px;
+  }
 }
 
 .banner-404__title {
@@ -33,6 +42,7 @@
   @media (max-width: $md) {
     font-size: 50px;
     margin-bottom: 36px;
+    text-align: left;
   }
 }
 
